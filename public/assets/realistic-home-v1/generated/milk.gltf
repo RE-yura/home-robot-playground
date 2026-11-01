@@ -1,0 +1,307 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "milk moulded bottle"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.4000000059604645
+        }
+      },
+      "name": "milk bottle",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8299999833106995,
+          0.8299999833106995,
+          0.7699999809265137,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.23000000417232513
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "milk paper print",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "milk cap",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1899999976158142,
+          0.3799999952316284,
+          0.5699999928474426,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.41999998688697815
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "milk moulded bottle",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "milk-print",
+      "uri": "../materials/printed/milk-print.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1070,
+      "max": [
+        0.03350000083446503,
+        0.1080000028014183,
+        0.03350000083446503
+      ],
+      "min": [
+        -0.03350000083446503,
+        -0.0949999988079071,
+        -0.03350000083446503
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1070,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1070,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 4032,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 388,
+      "max": [
+        0.03370000049471855,
+        0.029999999329447746,
+        0.03370000049471855
+      ],
+      "min": [
+        -0.03370000049471855,
+        -0.054999999701976776,
+        -0.03370000049471855
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 388,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 388,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 2304,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 644,
+      "max": [
+        0.017999999225139618,
+        0.11600000411272049,
+        0.017999999225139618
+      ],
+      "min": [
+        -0.017999999225139618,
+        0.10000000149011612,
+        -0.017999999225139618
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 644,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 644,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 3060,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 12840,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 12840,
+      "byteOffset": 12840,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8560,
+      "byteOffset": 25680,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8064,
+      "byteOffset": 34240,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 42304,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 46960,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3104,
+      "byteOffset": 51616,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4608,
+      "byteOffset": 54720,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7728,
+      "byteOffset": 59328,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7728,
+      "byteOffset": 67056,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5152,
+      "byteOffset": 74784,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6120,
+      "byteOffset": 79936,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 86056,
+      "uri": "milk.bin"
+    }
+  ]
+}

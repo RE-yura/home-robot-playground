@@ -1,0 +1,9 @@
+// Static-assets-only Worker (no script): requests to static assets are free and unlimited.
+// The asset directory is assembled outside Git by tools/assemble-static-site.mjs (see docs/static-hosting.md).
+{
+  "name": "home-robot-playground",
+  "compatibility_date": "2026-10-26",
+  "assets": { "directory": "../../work/deploy-workers/site" },
+  "workers_dev": true,
+  "preview_urls": false
+}

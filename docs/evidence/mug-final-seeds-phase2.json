@@ -1,0 +1,50 @@
+{
+ "schema": "hsr-final-seeds-v1",
+ "date": "2026-10-28",
+ "registeredBeforeAnyFinalRun": true,
+ "seeds": [3100, 3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108, 3109, 3110, 3111, 3112, 3113, 3114, 3115, 3116, 3117, 3118, 3119,
+  3120, 3121, 3122, 3123, 3124, 3125, 3126, 3127, 3128, 3129, 3130, 3131, 3132, 3133, 3134, 3135, 3136, 3137, 3138, 3139,
+  3140, 3141, 3142, 3143, 3144, 3145, 3146, 3147, 3148, 3149, 3150, 3151, 3152, 3153, 3154, 3155, 3156, 3157, 3158, 3159],
+ "seedNote": "3100-3159 lie outside every training, validation and dev range and were never run; the page accepts 3000-3199 (8f904e0). tools/vla-data/seed-registry.json is unchanged (certification hash-checks it).",
+ "candidate": {
+  "id": "prefix-rtc-v9",
+  "weightsSha256": "91aeb7db94a10c5db3dc0a320dbe3e083800164ee8959a24a3dd20adb55f24da",
+  "sharedGraphSha256": "78caf4e123ea6d7fee780293e2ae65d1a7cb0e4a1eb808ace74e45e12a917dae",
+  "registryCommit": "a6deb47",
+  "note": "f289 + 8000 updates (v3 recipe, delays 0-8, --prefix-noise 0.03) on the gentle-mug + DART-v1 fork 9532280e; learned policy only"
+ },
+ "successCriterion": {
+  "name": "walls",
+  "definition": "the mug rests (speed < 0.03 m/s, not held) for 2 s with its collision outline inside the basket side bars' centre lines (x +-0.195, z +-0.175 in the basket frame) and below the rim height (0.175); lying mugs count",
+  "approvedBy": "user, 2026-10-28 (壁の内側でよい); limit moved from the bars' inner faces to their centre lines in 7d9fc05 after a CPU replay showed a mug resting against a bar failing by contact penetration",
+  "alsoReported": "the original rim-opening criterion (rimSettledFor >= 2 at the end of the run) for the same runs"
+ },
+ "selection": {
+  "rule": "most dev continuous walls successes (0.4 s, 3000-3029) among candidates with synchronous 3000-3009 >= 8/10; tie -> fewer physical failures (base-drift, target-fell) among the failures",
+  "dev": {
+   "prefix-rtc-v9": {"continuousWalls": "28/30 (inner-face limit; failures 3021 RTC queue underflow, 3029 mug resting against the near bar)", "continuousRim": "24/30 (this screen), 26/30 (earlier screen)", "synchronousRim": "8/10", "atMost100N": 28,
+    "rerunDiagnostic": "3021 and 3029 with rtcHold=3: both success, no hold triggered (not used for the count)"},
+   "prefix-rtc-v9a": {"continuousWalls": "28/30 (centre-line limit; failures 3002 base-drift, 3021 RTC queue underflow)", "continuousRim": "25/30", "atMost100N": 28, "note": "uniform mean of v9 steps 6000 and 8000"},
+   "prefix-rtc-v9-e5": {"continuousWalls": "13/17, stopped (two grasp failures)"},
+   "prefix-rtc-v12s2": {"continuousWalls": "0/4, stopped"},
+   "prefix-rtc-v12s6": {"continuousRim": "7/10"},
+   "prefix-rtc-v12": {"continuousRim": "5/16, stopped"},
+   "prefix-rtc-v10": {"continuousRim": "8/10", "synchronousRim": "7/10"},
+   "prefix-rtc-v7": {"continuousRim": "25/30", "synchronousRim": "8/10"},
+   "prefix-rtc-v8": {"continuousRim": "4/10"},
+   "prefix-rtc-v6": {"continuousRim": "8/30"},
+   "prefix-rtc-v3": {"continuousRim": "27/30 dev, 50/60 phase-1 final"}
+  }
+ },
+ "protocol": {
+  "snapshot": ".superpowers/tools/eval-tree2 at 37bfff4, served on 127.0.0.1:5197; driver .superpowers/tools/pw/run-task.mjs via final-eval2.sh (page ?mode=learned&direct=1 plus the query below)",
+  "snapshotCommit": "37bfff4",
+  "continuousQuery": "&executor=async&model=prefix-rtc-v9&gripPause=0&rtcCoverage=400&success=walls&rtcHold=3",
+  "synchronousQuery": "&model=prefix-rtc-v9&success=walls",
+  "rtcHold": "late-reply grace: when an inference reply is late the last goal is kept for up to 3 boundaries (0.3 s of physics) instead of aborting; otherwise identical. Added because the only non-placement dev failures were single late replies (1.1-1.4 s vs ~0.92 s)",
+  "order": "continuous 3100-3159 first, then synchronous 3100-3159; each seed once",
+  "invalid": "only a run that stopped before its first physics step (load, parity, GPU loss, page crash) may be rerun; RTC queue underflow is a failure",
+  "summary": "tools/vla-learned/final_summary.py (walls successes, rim successes, invalid, underflow failures, successes at most 100 N, one-sided Clopper-Pearson 95 % lower bound)",
+  "target": "the user's goal of at least 95 %: 57/60 or more continuous walls successes"
+ }
+}

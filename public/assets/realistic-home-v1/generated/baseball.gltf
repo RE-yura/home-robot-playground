@@ -1,0 +1,311 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "White leather baseball"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Baseball leather",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.75
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Kraft paper tape",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6100000143051147,
+          0.5099999904632568,
+          0.3400000035762787,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8999999761581421
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Red cotton stitching",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.36000001430511475,
+          0.017999999225139618,
+          0.026000000536441803,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.8600000143051147
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "\u7403.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "baseball-leather-normal",
+      "uri": "../materials/printed/baseball-leather-normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "name": "baseball-leather",
+      "uri": "../materials/printed/baseball-leather.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 4751,
+      "max": [
+        0.036500025540590286,
+        0.0364999994635582,
+        0.036500051617622375
+      ],
+      "min": [
+        -0.03650008141994476,
+        -0.0364999994635582,
+        -0.0364999994635582
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 4751,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 4751,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 27072,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 2827,
+      "max": [
+        0.033094603568315506,
+        0.015970202162861824,
+        0.03308826684951782
+      ],
+      "min": [
+        -0.033094603568315506,
+        -0.015978801995515823,
+        -0.03308826684951782
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 2827,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 2827,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 15360,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 3564,
+      "max": [
+        0.03407265990972519,
+        0.01729639619588852,
+        0.03407111391425133
+      ],
+      "min": [
+        -0.03407265990972519,
+        -0.01730090193450451,
+        -0.03407111391425133
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 3564,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 3564,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 12960,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 57012,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 57012,
+      "byteOffset": 57012,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 38008,
+      "byteOffset": 114024,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54144,
+      "byteOffset": 152032,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 33924,
+      "byteOffset": 206176,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 33924,
+      "byteOffset": 240100,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 22616,
+      "byteOffset": 274024,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 30720,
+      "byteOffset": 296640,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 42768,
+      "byteOffset": 327360,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 42768,
+      "byteOffset": 370128,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 28512,
+      "byteOffset": 412896,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 25920,
+      "byteOffset": 441408,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 467328,
+      "uri": "baseball.bin"
+    }
+  ]
+}

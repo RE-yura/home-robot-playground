@@ -1,0 +1,312 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Bottle"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.6499999761581421
+        }
+      },
+      "name": "Olive glass bottle",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.10499999672174454,
+          0.23999999463558197,
+          0.14000000059604645,
+          1
+        ],
+        "metallicFactor": 0.05000000074505806,
+        "roughnessFactor": 0.1599999964237213
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Mineral water paper print",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.699999988079071
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.25
+        }
+      },
+      "name": "Ivory enamel",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7799999713897705,
+          0.7900000214576721,
+          0.75,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.2800000011920929
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Bottle",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "bottle-print",
+      "uri": "../materials/printed/bottle-print.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 1128,
+      "max": [
+        0.04500000178813934,
+        0.1459999978542328,
+        0.04500000178813934
+      ],
+      "min": [
+        -0.04500000178813934,
+        -0.10999999940395355,
+        -0.04500000178813934
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1128,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1128,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 5184,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 388,
+      "max": [
+        0.04540000110864639,
+        0.02800000086426735,
+        0.04540000110864639
+      ],
+      "min": [
+        -0.04540000110864639,
+        -0.052000001072883606,
+        -0.04540000110864639
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 388,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 388,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 2304,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 31556,
+      "max": [
+        0.022099999710917473,
+        0.15800000727176666,
+        0.022099999710917473
+      ],
+      "min": [
+        -0.022099999710917473,
+        0.14000000059604645,
+        -0.022099999710917473
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 31556,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 31556,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 149940,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 13536,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 13536,
+      "byteOffset": 13536,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 9024,
+      "byteOffset": 27072,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10368,
+      "byteOffset": 36096,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 46464,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 51120,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3104,
+      "byteOffset": 55776,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4608,
+      "byteOffset": 58880,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 378672,
+      "byteOffset": 63488,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 378672,
+      "byteOffset": 442160,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 252448,
+      "byteOffset": 820832,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 299880,
+      "byteOffset": 1073280,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1373160,
+      "uri": "bottle.bin"
+    }
+  ]
+}

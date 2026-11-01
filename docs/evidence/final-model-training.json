@@ -1,0 +1,122 @@
+{
+ "schema": "hsr-evidence-v1",
+ "topic": "Training of the final model (report section 5.1 and 5.2)",
+ "source": "summary of the training record, the checkpoint manifest and the offline prefix validation; raw files and weights are not in Git",
+ "policy": {
+  "id": "lerobot/smolvla_base",
+  "revision": "5e8d12a6e2975b0e5e5fce7c8caf47c371d257b6",
+  "lerobotRevision": "ca69a2068462a37f7cdcb74180927a2f863d2bf7",
+  "startingPoint": "the HSR model already fine-tuned from it (public model)"
+ },
+ "settings": {
+  "batchSize": 1,
+  "gradientAccumulation": 4,
+  "learningRate": 2e-05,
+  "sampling": {
+   "firstFrames": 20,
+   "earlyWeight": 8,
+   "laterWeight": 1
+  },
+  "rtcTrainingMaxDelay": 8,
+  "prefixNoise": {
+   "sigma": 0.03,
+   "kind": "one Gaussian offset per sample and real axis over the committed goals, normalized units"
+  },
+  "optimizer": {
+   "name": "AdamW",
+   "betas": [
+    0.9,
+    0.95
+   ],
+   "eps": 1e-08,
+   "weightDecay": 1e-10
+  },
+  "learningRateSchedule": "constant",
+  "gradientClipNorm": 10,
+  "autocast": "bfloat16",
+  "trainable": "action expert and the state, action and time projections; the SmolVLM2 vision and language model stay frozen",
+  "trainedUpdates": 8000,
+  "samplesUsed": 32000,
+  "chunkLength": 16,
+  "sampleHz": 10
+ },
+ "data": {
+  "train": {
+   "episodes": 665,
+   "frames": 167825,
+   "gentleMug": 322,
+   "dartMug": 293,
+   "ball": 50
+  },
+  "validation": {
+   "episodes": 27,
+   "frames": 7353
+  }
+ },
+ "wallTime": "about 2 h on one GPU, estimated from 1.2 updates/s observed in a run with the same recipe and another seed",
+ "validationLoss": {
+  "2000": 0.0507,
+  "4000": 0.0226,
+  "6000": 0.0286,
+  "8000": 0.031
+ },
+ "validationLossNote": "flow matching loss on 16 validation samples with random noise and time, so it is noisy; the final checkpoint (8000) was used without selecting by loss",
+ "trainingLossMeanPer200Updates": [
+  0.0491,
+  0.036,
+  0.0397,
+  0.0327,
+  0.0379,
+  0.0345,
+  0.0312,
+  0.0301,
+  0.0309,
+  0.0272,
+  0.0291,
+  0.0286,
+  0.026,
+  0.0248,
+  0.0259,
+  0.0271,
+  0.0271,
+  0.0234,
+  0.0286,
+  0.0221,
+  0.0249,
+  0.0239,
+  0.0215,
+  0.0226,
+  0.0205,
+  0.0224,
+  0.0251,
+  0.0207,
+  0.0194,
+  0.0216,
+  0.0204,
+  0.0203,
+  0.0233,
+  0.0247,
+  0.0237,
+  0.0244,
+  0.0248,
+  0.018,
+  0.0216,
+  0.0212
+ ],
+ "offlinePrefixError": {
+  "metric": "normalized mean absolute error of the goals after the committed prefix, validation data, by number of committed goals",
+  "publicModel": {
+   "0": 0.055,
+   "3": 0.0992,
+   "5": 0.1181,
+   "7": 0.1322
+  },
+  "finalModel": {
+   "0": 0.0402,
+   "3": 0.0345,
+   "5": 0.0325,
+   "7": 0.0302
+  },
+  "note": "lower offline error did not predict continuous success; see mug-phase2-candidates-2026-10-28.json"
+ }
+}

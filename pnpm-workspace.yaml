@@ -1,0 +1,7 @@
+allowBuilds:
+  onnxruntime-node: false
+  protobufjs: false
+minimumReleaseAgeExclude:
+  - '@huggingface/transformers@4.3.1'
+overrides:
+  '@types/three': 0.180.0

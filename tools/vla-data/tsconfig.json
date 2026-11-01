@@ -1,0 +1,1 @@
+{ "extends": "../../tsconfig.app.json", "compilerOptions": { "tsBuildInfoFile": "../../node_modules/.tmp/vla-data.tsbuildinfo" }, "include": ["main.tsx", ] }

@@ -1,0 +1,307 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "juice moulded bottle"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.4000000059604645
+        }
+      },
+      "name": "juice bottle",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.4399999976158142,
+          0.23999999463558197,
+          0.06499999761581421,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.23000000417232513
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "juice paper print",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6499999761581421
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "juice cap",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7200000286102295,
+          0.5600000023841858,
+          0.20000000298023224,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.41999998688697815
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "juice moulded bottle",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "juice-print",
+      "uri": "../materials/printed/juice-print.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 888,
+      "max": [
+        0.029999999329447746,
+        0.10400000214576721,
+        0.029999999329447746
+      ],
+      "min": [
+        -0.029999999329447746,
+        -0.0949999988079071,
+        -0.029999999329447746
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 888,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 888,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 4032,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 388,
+      "max": [
+        0.03020000085234642,
+        0.029999999329447746,
+        0.03020000085234642
+      ],
+      "min": [
+        -0.03020000085234642,
+        -0.054999999701976776,
+        -0.03020000085234642
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 388,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 388,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 2304,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 644,
+      "max": [
+        0.017999999225139618,
+        0.1120000034570694,
+        0.017999999225139618
+      ],
+      "min": [
+        -0.017999999225139618,
+        0.09600000083446503,
+        -0.017999999225139618
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 644,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 644,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 3060,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 10656,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 10656,
+      "byteOffset": 10656,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7104,
+      "byteOffset": 21312,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 8064,
+      "byteOffset": 28416,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 36480,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 41136,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3104,
+      "byteOffset": 45792,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4608,
+      "byteOffset": 48896,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7728,
+      "byteOffset": 53504,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7728,
+      "byteOffset": 61232,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5152,
+      "byteOffset": 68960,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6120,
+      "byteOffset": 74112,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 80232,
+      "uri": "juice.bin"
+    }
+  ]
+}

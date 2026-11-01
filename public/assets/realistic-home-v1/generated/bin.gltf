@@ -1,0 +1,134 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Basket bottom",
+      "translation": [
+        0,
+        -0.01899999938905239,
+        0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.11999999731779099
+        }
+      },
+      "name": "Warm white polypropylene",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8199999928474426,
+          0.800000011920929,
+          0.7300000190734863,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.46000000834465027
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "\u7acb\u65b9\u4f53.005",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 11214,
+      "max": [
+        0.25600001215934753,
+        0.2239999920129776,
+        0.1899999976158142
+      ],
+      "min": [
+        -0.25600001215934753,
+        -0.006000000052154064,
+        -0.1899999976158142
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 11214,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 11214,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 56700,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 134568,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 134568,
+      "byteOffset": 134568,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 89712,
+      "byteOffset": 269136,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 113400,
+      "byteOffset": 358848,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 472248,
+      "uri": "bin.bin"
+    }
+  ]
+}

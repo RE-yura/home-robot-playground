@@ -1,0 +1,350 @@
+{
+  "creator": "Toyota Motor Corporation",
+  "repository": "https://github.com/ToyotaResearchInstitute/hsr_meshes",
+  "commit": "2d831996c0f9548164a4df5886104793e557897a",
+  "license": "CC-BY-NC-ND-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "modifications": "Original OBJ, MTL and textures copied byte-for-byte. Collision vertices and URDF frames are extracted without mesh edits; runtime rigid transforms assemble the original links.",
+  "files": [
+    {
+      "path": "DESCRIPTION-LICENSE.txt",
+      "sha256": "0e999b887c8e350365b3fa8182c2c067473abbd3bfeb8f28ddf92a35d8aa70d3",
+      "bytes": 1667
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "b8b29b469916561e1850b3a262e356f003032163b4b19e92174b5daac94776b4",
+      "bytes": 13121
+    },
+    {
+      "path": "hsrb4s.obj.urdf",
+      "sha256": "e437f7dd569cc6a77e29ed4978085f78e92807051989710707ecf2475205ddce",
+      "bytes": 53001
+    },
+    {
+      "path": "meshes/arm_v0/arm_flex.collision.obj",
+      "sha256": "6aa2229505abd4a98a39443688c60c2738f281b2a0bef3927bcde761c1b29e24",
+      "bytes": 6825
+    },
+    {
+      "path": "meshes/arm_v0/arm_flex_light.mtl",
+      "sha256": "d06a79e2a90e10b4be1ef06f95549334acb79dbffaafa05ef3758afa6581e9d5",
+      "bytes": 253
+    },
+    {
+      "path": "meshes/arm_v0/arm_flex_light.obj",
+      "sha256": "01a8e1ea35031ebaef42f184deb7ce1b437cb1e309dbe058ab0c6f6fd6d0df51",
+      "bytes": 173898
+    },
+    {
+      "path": "meshes/arm_v0/arm_roll.collision.obj",
+      "sha256": "f3c80a483fe56c6b18420da8f997f468f1bb2a3bec7ad8e7d6c6c99ce66403b4",
+      "bytes": 5067
+    },
+    {
+      "path": "meshes/arm_v0/arm_roll_light.mtl",
+      "sha256": "7ce92dcd795e09d6c186afa6f1f0cc36993bafd6af32f91b7c7a41c6cccc7d94",
+      "bytes": 257
+    },
+    {
+      "path": "meshes/arm_v0/arm_roll_light.obj",
+      "sha256": "83f5591e25c4c0cd38b240e1cd175e5eccb2e53f9152a28f20a8a2ff787af814",
+      "bytes": 72868
+    },
+    {
+      "path": "meshes/arm_v0/gray.png",
+      "sha256": "7f0df8db3fdfb6c650a04ee09e4b84b41286358a12c2964fb41c029b9ca12876",
+      "bytes": 1580
+    },
+    {
+      "path": "meshes/arm_v0/shoulder.collision.obj",
+      "sha256": "eac32d0ba3e7c68d876b2dd7bf4f17f3e187f18bf55b490544032841cd9d80d3",
+      "bytes": 6992
+    },
+    {
+      "path": "meshes/arm_v0/shoulder.mtl",
+      "sha256": "3f5e5956308ca97c3b3eb19921288f838e5ee92af48fe164190b157126fd0bc6",
+      "bytes": 244
+    },
+    {
+      "path": "meshes/arm_v0/shoulder.obj",
+      "sha256": "3b22569e6069cefc47b602e9d0af9a10933479ef49e67759398fae61154357e9",
+      "bytes": 499127
+    },
+    {
+      "path": "meshes/arm_v0/white.png",
+      "sha256": "2888fb300054c4b95fc14a4710bd3cd45c06ee2acc152a79bc4248f619e32dfc",
+      "bytes": 1597
+    },
+    {
+      "path": "meshes/base_v2/base_light.mtl",
+      "sha256": "fc5699b2e548482791b77801394a96bf1116bc7f7a1dd66611de58f56d961dc5",
+      "bytes": 666
+    },
+    {
+      "path": "meshes/base_v2/base_light.obj",
+      "sha256": "19822cfc11bed76b3e7710c7c39c8c34fadd4af34493fbad9b960544ae2dfcce",
+      "bytes": 232089
+    },
+    {
+      "path": "meshes/base_v2/body_light.mtl",
+      "sha256": "5801260fb7c9d44ac2fcee4f05dcfc3327fff7391baa9c1840195fd20dd95f02",
+      "bytes": 454
+    },
+    {
+      "path": "meshes/base_v2/body_light.obj",
+      "sha256": "142f3e236b59a9dbf041db84989933bb52ea5081dac60bee1aa7c0821f861410",
+      "bytes": 36941
+    },
+    {
+      "path": "meshes/base_v2/gray.png",
+      "sha256": "7f0df8db3fdfb6c650a04ee09e4b84b41286358a12c2964fb41c029b9ca12876",
+      "bytes": 1580
+    },
+    {
+      "path": "meshes/base_v2/torso_base.mtl",
+      "sha256": "6c6213b353dc8c230339ab01f1847d0d389621f771b35f7afbb7622cbc292143",
+      "bytes": 248
+    },
+    {
+      "path": "meshes/base_v2/torso_base.obj",
+      "sha256": "14684574d4ae1ac5c9aef0dbc3b0d28a50909ef6a8d5b44a19bdb24c0b3f0088",
+      "bytes": 20462
+    },
+    {
+      "path": "meshes/base_v2/white.png",
+      "sha256": "2888fb300054c4b95fc14a4710bd3cd45c06ee2acc152a79bc4248f619e32dfc",
+      "bytes": 1597
+    },
+    {
+      "path": "meshes/hand_v0/gray.png",
+      "sha256": "7f0df8db3fdfb6c650a04ee09e4b84b41286358a12c2964fb41c029b9ca12876",
+      "bytes": 1580
+    },
+    {
+      "path": "meshes/hand_v0/l_distal.mtl",
+      "sha256": "889a20172f273426eb50302d3687b4393f23b9ca1972cec3e3e72365a6b3cea8",
+      "bytes": 243
+    },
+    {
+      "path": "meshes/hand_v0/l_distal.obj",
+      "sha256": "4f5e1ed3f43445f7f02dc3d0489e129447dc16c75a65ca10eb20719a8ea5617c",
+      "bytes": 3164
+    },
+    {
+      "path": "meshes/hand_v0/l_proximal.mtl",
+      "sha256": "019393e62d64b16984b7ac7e65187c0591c5929bd097c4489a3a331e5d68fa48",
+      "bytes": 243
+    },
+    {
+      "path": "meshes/hand_v0/l_proximal.obj",
+      "sha256": "e238a4be0dfdc853bef79021e38de0b1fc061feab42c68740a9ca38c682fd61c",
+      "bytes": 2656
+    },
+    {
+      "path": "meshes/hand_v0/palm.mtl",
+      "sha256": "0fdf099218a559b794fa3355c2f7cfd72e22dc90d5a6a960cf85b62dd604bcac",
+      "bytes": 239
+    },
+    {
+      "path": "meshes/hand_v0/palm.obj",
+      "sha256": "4c6c1c25aefd665adb88bad25596fbbb2044b61c4eaede9c6370c465a61be7c6",
+      "bytes": 1954
+    },
+    {
+      "path": "meshes/hand_v0/r_distal.mtl",
+      "sha256": "0fdf099218a559b794fa3355c2f7cfd72e22dc90d5a6a960cf85b62dd604bcac",
+      "bytes": 239
+    },
+    {
+      "path": "meshes/hand_v0/r_distal.obj",
+      "sha256": "e8f7543e61fba025873cfcdf2254937402de977e6b36bd0d91e25eaae5f73229",
+      "bytes": 2655
+    },
+    {
+      "path": "meshes/hand_v0/r_proximal.mtl",
+      "sha256": "87848c0edb942722615d46875bfc706bf9d88d7c7775d7b8a47935a750fad032",
+      "bytes": 243
+    },
+    {
+      "path": "meshes/hand_v0/r_proximal.obj",
+      "sha256": "c901ef66687909f962ec394eaa8d5554cc9f8428bee44c9f8c954e4402487a51",
+      "bytes": 2653
+    },
+    {
+      "path": "meshes/head_v1/display.png",
+      "sha256": "43af60b67fd316c8cee78e32a62e320c8e0305d69d2fe1b0a0a8976c6bc74434",
+      "bytes": 22042
+    },
+    {
+      "path": "meshes/head_v1/gray.png",
+      "sha256": "7f0df8db3fdfb6c650a04ee09e4b84b41286358a12c2964fb41c029b9ca12876",
+      "bytes": 1580
+    },
+    {
+      "path": "meshes/head_v1/head.mtl",
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa",
+      "bytes": 137
+    },
+    {
+      "path": "meshes/head_v1/head.obj",
+      "sha256": "88f7710073fe46635b1069016fb510f1ac799f0a05a97d94290cdd8ede5806d8",
+      "bytes": 11532
+    },
+    {
+      "path": "meshes/head_v1/head_pan.mtl",
+      "sha256": "cb1cf6ff4ad660974dc41bd56f7e2916cca17b25ab850a40f65c27bda468a3f9",
+      "bytes": 224
+    },
+    {
+      "path": "meshes/head_v1/head_pan.obj",
+      "sha256": "14209d109fa2efa7eeb867eec7c62fc7b320c8c24f57f82e4433f698f29812a5",
+      "bytes": 3071
+    },
+    {
+      "path": "meshes/head_v1/head_tilt.mtl",
+      "sha256": "2d36233930c1d9fa54dc7c9f7e255da6f034d43813222ac794af03250176f242",
+      "bytes": 253
+    },
+    {
+      "path": "meshes/head_v1/head_tilt.obj",
+      "sha256": "8511c9283d6b2601dd65dec5fb6eba8ed85a00c0a02573bc57db0001514e541c",
+      "bytes": 434954
+    },
+    {
+      "path": "meshes/head_v1/head_upper.mtl",
+      "sha256": "b4d17afc872a96f424155128b24701ecb8ab35851a7e59499bc98ab38233e5b9",
+      "bytes": 252
+    },
+    {
+      "path": "meshes/head_v1/head_upper.obj",
+      "sha256": "924e40047c545d46e94bda3718f85e6f8910b4600fad77a52451662bd709407d",
+      "bytes": 141878
+    },
+    {
+      "path": "meshes/head_v1/microphone.png",
+      "sha256": "b3f8ab13891a3ef1fc18f4d8cd74a9b9f699392311273ba9066d3ba83e3abf03",
+      "bytes": 20149
+    },
+    {
+      "path": "meshes/head_v1/tablet.mtl",
+      "sha256": "6e35bcf7fe06b2a05c3c8e8456c4b14d41728cb454a2aa426833a2c504baf3aa",
+      "bytes": 137
+    },
+    {
+      "path": "meshes/head_v1/tablet.obj",
+      "sha256": "535b1ef92864538671d0df3ce1fe8a45bd3595d2943163d72779be2f21e555b9",
+      "bytes": 929
+    },
+    {
+      "path": "meshes/head_v1/tablet_base.mtl",
+      "sha256": "f307a30cfdd31bc227e77dde5b213f30d29e7453245fda0ea95e9f876a0466a5",
+      "bytes": 651
+    },
+    {
+      "path": "meshes/head_v1/tablet_base.obj",
+      "sha256": "fba703d2e04615396f20a283a6047b37b378b0d83d5af1b24a49e50385df28f2",
+      "bytes": 27322
+    },
+    {
+      "path": "meshes/head_v1/white.png",
+      "sha256": "2888fb300054c4b95fc14a4710bd3cd45c06ee2acc152a79bc4248f619e32dfc",
+      "bytes": 1597
+    },
+    {
+      "path": "meshes/sensors/black.png",
+      "sha256": "93887fa68d1d825d0c0e1ec01f49676115c90e43a155ff3eccc620508a55bf49",
+      "bytes": 932
+    },
+    {
+      "path": "meshes/sensors/head_camera.mtl",
+      "sha256": "4b68448a7d646dbb78f3d305cf49637a35d464ab10bf69b1826e405ad9a41784",
+      "bytes": 249
+    },
+    {
+      "path": "meshes/sensors/head_camera.obj",
+      "sha256": "1b93032b87ec0de0308e34f3a7e197074f9875ec5175d7ab0661b6955c0abe0d",
+      "bytes": 55318
+    },
+    {
+      "path": "meshes/sensors/rgbd.png",
+      "sha256": "961d7ee604f14eb025ec96aa0aa49efe1bddf50f431bde415fc9f46b7e7e7b7c",
+      "bytes": 8212
+    },
+    {
+      "path": "meshes/sensors/rgbd_light.mtl",
+      "sha256": "9a3dacbe625c3c9fe7f389304d1f1611c116878f04d83453051525062de7b7ca",
+      "bytes": 245
+    },
+    {
+      "path": "meshes/sensors/rgbd_light.obj",
+      "sha256": "2f4abd1acb756b9c3e0e04d9ba220ee4c18e22f28abb7de206ca8214e1f32dbf",
+      "bytes": 14208
+    },
+    {
+      "path": "meshes/torso_v0/gray.png",
+      "sha256": "7f0df8db3fdfb6c650a04ee09e4b84b41286358a12c2964fb41c029b9ca12876",
+      "bytes": 1580
+    },
+    {
+      "path": "meshes/torso_v0/torso.collision.obj",
+      "sha256": "a2522fa0aa578b4e2a08a59ef1665d5961b806c4d12ad3ce7e60c997380c7713",
+      "bytes": 3148
+    },
+    {
+      "path": "meshes/torso_v0/torso_light.mtl",
+      "sha256": "d9931cdb6f67a274a6849d04efb8b2f7edd964ebac982a2fe1b9f02f86b7af95",
+      "bytes": 454
+    },
+    {
+      "path": "meshes/torso_v0/torso_light.obj",
+      "sha256": "2e6f82b29a01a5f83e6b214d9a77375e11ee7579d9a78cc3f4dbf45c47e949e6",
+      "bytes": 337089
+    },
+    {
+      "path": "meshes/torso_v0/white.png",
+      "sha256": "2888fb300054c4b95fc14a4710bd3cd45c06ee2acc152a79bc4248f619e32dfc",
+      "bytes": 1597
+    },
+    {
+      "path": "meshes/wrist_v0/gray.png",
+      "sha256": "7f0df8db3fdfb6c650a04ee09e4b84b41286358a12c2964fb41c029b9ca12876",
+      "bytes": 1580
+    },
+    {
+      "path": "meshes/wrist_v0/white.png",
+      "sha256": "2888fb300054c4b95fc14a4710bd3cd45c06ee2acc152a79bc4248f619e32dfc",
+      "bytes": 1597
+    },
+    {
+      "path": "meshes/wrist_v0/wrist_flex.mtl",
+      "sha256": "6c6213b353dc8c230339ab01f1847d0d389621f771b35f7afbb7622cbc292143",
+      "bytes": 248
+    },
+    {
+      "path": "meshes/wrist_v0/wrist_flex.obj",
+      "sha256": "b10a5321f354590fd7846993b715a4d66adb9b4496dd871d8f44d989f85e407d",
+      "bytes": 191204
+    },
+    {
+      "path": "meshes/wrist_v0/wrist_roll.collision.obj",
+      "sha256": "604dcdd7f37d4df42abe0dce5f6896fbafb35bcbb51b313685275036b04793e0",
+      "bytes": 4858
+    },
+    {
+      "path": "meshes/wrist_v0/wrist_roll.mtl",
+      "sha256": "d392d8f62ef1c64b86a64b0fc103da2c435b3d9c979c5de3ec884b2069691f25",
+      "bytes": 249
+    },
+    {
+      "path": "meshes/wrist_v0/wrist_roll.obj",
+      "sha256": "b216971d0718ee97ba3d070764c16d086f04fbeecd9d98d321d33324c60b0c7d",
+      "bytes": 383637
+    }
+  ],
+  "description": {
+    "repository": "https://github.com/ToyotaResearchInstitute/hsr_description",
+    "commit": "9281be02b759e96107183b8c78d944ed8144d61b",
+    "license": "BSD-3-Clause-Clear"
+  }
+}

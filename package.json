@@ -1,0 +1,37 @@
+{
+  "name": "physics-playground",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5183 --strictPort",
+    "build": "tsc -b && vite build && node tools/prerender-shell.mjs",
+    "lint": "oxlint",
+    "test": "node --test tests/*.test.ts",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1",
+    "@mujoco/mujoco": "3.14.0",
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.1",
+    "onnxruntime-web": "1.31.0-dev.20260914-8d85527a0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/three": "0.180.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

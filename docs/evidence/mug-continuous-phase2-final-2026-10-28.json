@@ -1,0 +1,185 @@
+{
+ "schema": "hsr-evidence-v1",
+ "date": "2026-10-28",
+ "topic": "Phase 2 final: prefix-rtc-v9, registered seeds 3100-3159 (docs/evidence/mug-final-seeds-phase2.json, 1715e73), continuous 0.4 s with the walls success criterion and rtcHold=3, then synchronous; learned policy only, no rule assist",
+ "userGoal": "at least 95 % (2026-10-28 /goal); success may count a lying mug inside the basket walls (user, 2026-10-28)",
+ "snapshot": ".superpowers/tools/eval-tree2 at 37bfff4, Chrome WebGPU on this Mac, port 5197",
+ "final": {
+  "continuous400": {
+   "trials": 60,
+   "successes": 60,
+   "lowerBound95": 0.9513,
+   "rimSuccesses": 54,
+   "rimLowerBound95": 0.8121,
+   "underflowFailures": 0,
+   "successAtMost100N": 60,
+   "successesWithoutForceAudit": 0,
+   "invalid": [],
+   "noRecord": [],
+   "failures": [],
+   "successCriterion": "walls",
+   "rimOnlyFailureSeeds": [
+    3103,
+    3131,
+    3143,
+    3144,
+    3151,
+    3155
+   ],
+   "simulationSeconds": {
+    "median": 25.4,
+    "max": 28.8
+   },
+   "playbackRateMedian": 0.465,
+   "lateHolds": {
+    "3153": 1
+   },
+   "peakUnintendedForceN": {
+    "median": 55.7,
+    "max": 97.9
+   },
+   "inferenceMs": {
+    "median": 898.9,
+    "p90": 942.6,
+    "p99": 991.4,
+    "max": 1159,
+    "n": 1445
+   },
+   "goalJumpRad": {
+    "note": "max over lift and four arm joints; handoff = first new goal vs the last executed goal at a chunk switch, within = consecutive 100 ms goals inside a chunk",
+    "handoff": {
+     "median": 0.016,
+     "p90": 0.077,
+     "p99": 0.136,
+     "n": 1378
+    },
+    "within": {
+     "median": 0.009,
+     "p90": 0.086,
+     "p99": 0.369
+    }
+   }
+  },
+  "synchronous": {
+   "trials": 60,
+   "successes": 60,
+   "lowerBound95": 0.9513,
+   "rimSuccesses": 47,
+   "rimLowerBound95": 0.6778,
+   "underflowFailures": 0,
+   "successAtMost100N": 0,
+   "successesWithoutForceAudit": 60,
+   "invalid": [],
+   "noRecord": [],
+   "failures": [],
+   "successCriterion": "walls",
+   "rimOnlyFailureSeeds": [
+    3100,
+    3103,
+    3104,
+    3114,
+    3120,
+    3123,
+    3134,
+    3143,
+    3146,
+    3151,
+    3154,
+    3155,
+    3156
+   ],
+   "simulationSeconds": {
+    "median": 27.1,
+    "max": 41.4
+   }
+  }
+ },
+ "devScreens": {
+  "v9-walls": {
+   "trials": 30,
+   "successes": 28,
+   "rimSuccesses": 24,
+   "successAtMost100N": 28,
+   "failures": [
+    {
+     "seed": 3021,
+     "status": "running",
+     "reason": "RTC queue underflow",
+     "simulationS": 14.9
+    },
+    {
+     "seed": 3029,
+     "status": "failed",
+     "reason": "timeout",
+     "simulationS": 120.0
+    }
+   ]
+  },
+  "v9a-walls": {
+   "trials": 30,
+   "successes": 28,
+   "rimSuccesses": 25,
+   "successAtMost100N": 28,
+   "failures": [
+    {
+     "seed": 3002,
+     "status": "failed",
+     "reason": "base-drift",
+     "simulationS": 5.1
+    },
+    {
+     "seed": 3021,
+     "status": "running",
+     "reason": "RTC queue underflow",
+     "simulationS": 10.5
+    }
+   ]
+  },
+  "v9e5-walls": {
+   "trials": 17,
+   "successes": 13,
+   "rimSuccesses": 12,
+   "successAtMost100N": 12,
+   "failures": [
+    {
+     "seed": 3003,
+     "status": "failed",
+     "reason": "timeout",
+     "simulationS": 120.0
+    },
+    {
+     "seed": 3006,
+     "status": "failed",
+     "reason": "timeout",
+     "simulationS": 120.0
+    },
+    {
+     "seed": 3011,
+     "status": "failed",
+     "reason": "timeout",
+     "simulationS": 120.0
+    },
+    {
+     "seed": 3016,
+     "status": "failed",
+     "reason": "timeout",
+     "simulationS": 120.0
+    }
+   ]
+  },
+  "v9-walls-note": "inner-face limit (before 7d9fc05)",
+  "v12s2-walls": "0/4 stopped",
+  "rerunDiagnostic": "v9 3021/3029 and v9a 3021/3002 with rtcHold=3: all success, no hold triggered (not counted)"
+ },
+ "changesThisRound": [
+  "walls criterion ?success=walls (fde0575), limit at the bars centre lines (7d9fc05)",
+  "checkpoint_average.py (be7ea97) -> prefix-rtc-v9a",
+  "final protocol adds rtcHold=3"
+ ],
+ "notChanged": [
+  "physics, base-drift limit 2 cm / 0.03 rad, force quality 100 N, 120 s timeout",
+  "policy inputs (head/hand RGB, instruction, six measured channels, committed action prefix)",
+  "public default model, Workers site, Sites version69"
+ ],
+ "rawData": "work/mug-continuous-100/runs/final2-v9-* (outside Git)"
+}

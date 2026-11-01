@@ -1,0 +1,372 @@
+{
+ "schema": "hsr-evidence-v1",
+ "date": "2026-10-28",
+ "topic": "Phase 2 candidates v6-v9 (plan docs/superpowers/plans/2026-10-27-mug-continuous-phase2.md); dev seeds 3000-3029, second snapshot (port 5197)",
+ "candidates": {
+  "prefix-rtc-v6": {
+   "weights": "5b4005f86425",
+   "training": "v3 data, --mug-recipe-v6: 16000 updates x batch 8, first20x2, lr 2e-5 (4x v3 samples)",
+   "sync": {
+    "successes": 25,
+    "runs": 30,
+    "successAtMost100N": 0,
+    "failures": [
+     {
+      "seed": 3002,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3009,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3014,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3026,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3029,
+      "reason": "timeout"
+     }
+    ]
+   },
+   "continuous400": {
+    "successes": 8,
+    "runs": 30,
+    "successAtMost100N": 8,
+    "failures": [
+     {
+      "seed": 3000,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3002,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3003,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3004,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3006,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3007,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3008,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3009,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3012,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3014,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3015,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3016,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3017,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3019,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3021,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3022,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3024,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3025,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3026,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3027,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3028,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3029,
+      "reason": "base-drift"
+     }
+    ]
+   },
+   "verdict": "not adopted: continuous collapses (17 base-drift before carry)"
+  },
+  "prefix-rtc-v8": {
+   "weights": "f5ef526c6626",
+   "training": "v6 recipe + --train-vision (SigLIP tower and connector, lr 1e-5)",
+   "continuous400": {
+    "successes": 4,
+    "runs": 10,
+    "successAtMost100N": 4,
+    "failures": [
+     {
+      "seed": 3000,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3003,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3004,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3005,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3008,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3009,
+      "reason": "timeout"
+     }
+    ]
+   },
+   "verdict": "not adopted"
+  },
+  "prefix-rtc-v7": {
+   "weights": "52825f665b5c",
+   "training": "v3 recipe (8000 x 4, first20x8) on v3 data + 293 DART episodes (fork 9532280e)",
+   "sync": {
+    "successes": 8,
+    "runs": 10,
+    "successAtMost100N": 0,
+    "failures": [
+     {
+      "seed": 3003,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3008,
+      "reason": "base-drift"
+     }
+    ]
+   },
+   "continuous400": {
+    "successes": 25,
+    "runs": 30,
+    "successAtMost100N": 21,
+    "failures": [
+     {
+      "seed": 3000,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3004,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3016,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3017,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3027,
+      "reason": "RTC queue underflow"
+     }
+    ]
+   },
+   "note": "all continuous failures at placement; no grasp/carry failure (v3: mostly grasp)"
+  },
+  "prefix-rtc-v9": {
+   "weights": "91aeb7db94a1",
+   "training": "v7 data and recipe + --prefix-noise 0.03",
+   "sync": {
+    "successes": 8,
+    "runs": 10,
+    "successAtMost100N": 0,
+    "failures": [
+     {
+      "seed": 3002,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3007,
+      "reason": "timeout"
+     }
+    ]
+   },
+   "continuous400": "pending"
+  },
+  "prefix-rtc-v3 (reference, same snapshot unless noted)": {
+   "continuous400 first snapshot": {
+    "successes": 27,
+    "runs": 30,
+    "successAtMost100N": 24,
+    "failures": [
+     {
+      "seed": 3002,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3007,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3028,
+      "reason": "timeout"
+     }
+    ]
+   },
+   "continuous400 with rtcHold=3 (no hold triggered)": {
+    "successes": 23,
+    "runs": 30,
+    "successAtMost100N": 21,
+    "failures": [
+     {
+      "seed": 3001,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3007,
+      "reason": "base-drift"
+     },
+     {
+      "seed": 3010,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3013,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3022,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3025,
+      "reason": "timeout"
+     },
+     {
+      "seed": 3028,
+      "reason": "timeout"
+     }
+    ]
+   },
+   "control on v6 base-drift seeds": {
+    "successes": 5,
+    "runs": 5,
+    "successAtMost100N": 4,
+    "failures": []
+   }
+  }
+ },
+ "offlinePrefixValidationMAE (delays 0,3,5,7)": {
+  "v6 run": {
+   "parent": [
+    0.055,
+    0.0992,
+    0.1181,
+    0.1322
+   ],
+   "v3": [
+    0.0385,
+    0.03,
+    0.0282,
+    0.0274
+   ],
+   "v6": [
+    0.0325,
+    0.0253,
+    0.0237,
+    0.0219
+   ]
+  },
+  "v7 run": {
+   "parent": [
+    0.055,
+    0.0992,
+    0.1181,
+    0.1322
+   ],
+   "v3": [
+    0.0385,
+    0.03,
+    0.0282,
+    0.0274
+   ],
+   "v6": [
+    0.0325,
+    0.0253,
+    0.0237,
+    0.0219
+   ],
+   "v7": [
+    0.0382,
+    0.0309,
+    0.0287,
+    0.0264
+   ]
+  },
+  "v8 run": {
+   "parent": [
+    0.055,
+    0.0992,
+    0.1181,
+    0.1322
+   ],
+   "v3": [
+    0.0385,
+    0.03,
+    0.0282,
+    0.0274
+   ],
+   "v8": [
+    0.0282,
+    0.0228,
+    0.0209,
+    0.0198
+   ]
+  }
+ },
+ "conclusions": [
+  "Lower offline prefix error does not predict continuous success: v6/v8 have the lowest MAE and collapse in continuous execution.",
+  "DART data removed v3's grasp/carry failures (v7); placement is the remaining failure mode.",
+  "Next: gentle-mug-v2 teacher (carry pitch +0.4, mug lowered 16 cm inside the fence) recollection -> v10."
+ ]
+}

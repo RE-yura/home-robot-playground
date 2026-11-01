@@ -1,0 +1,6 @@
+Language planner: Qwen3-1.7B (Qwen Team), Apache License 2.0.
+ONNX distribution: onnx-community/Qwen3-1.7B-ONNX, revision 3231b522c6e703b2f9b3cd8ea27426a1289a02f2.
+https://huggingface.co/onnx-community/Qwen3-1.7B-ONNX
+https://huggingface.co/Qwen/Qwen3-1.7B/blob/main/LICENSE
+The external-weight layout changes storage only; the parameters and graph operations are preserved.
+The public language planner is experimental. Confirm the interpreted targets and order before execution.

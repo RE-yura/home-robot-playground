@@ -1,0 +1,1291 @@
+{
+ "schema": "hsr-evidence-v1",
+ "date": "2026-10-27",
+ "topic": "Dev evaluation of the 100 % plan candidates (plan Task 7 Step 3), real Chrome WebGPU, mug",
+ "snapshots": {
+  "180e309": "v2 / prefix-rtc-e5 synchronous 3010-3029",
+  "da2ac8e": "v3 gate and continuous",
+  "19360ca": "v4 gate, v3 synchronous 3010-3029, v3-e5 gate",
+  "cd7d50f": "v5 gate"
+ },
+ "queries": {
+  "synchronous": "?mode=learned&direct=1&model=<id>",
+  "continuous400": "?mode=learned&direct=1&executor=async&model=<id>&gripPause=0&rtcCoverage=400"
+ },
+ "prefix-rtc-v2": {
+  "synchronous3010to3029": {
+   "trials": 20,
+   "successes": 17,
+   "runs": [
+    {
+     "seed": 3010,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 33.038,
+     "inferences": 21,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3011,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.552,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3012,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 24.766,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3013,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.33,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3014,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3015,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3016,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 24.916,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3017,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 31.324,
+     "inferences": 20,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3018,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 21.656,
+     "inferences": 14,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3019,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 29.92,
+     "inferences": 19,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3020,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.33,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3021,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.526,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3022,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.1,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3023,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.846,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3024,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.478,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3025,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3026,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.42,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3027,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 31.244,
+     "inferences": 20,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3028,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.622,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3029,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 24.064,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    }
+   ]
+  }
+ },
+ "prefix-rtc-e5": {
+  "synchronous3010to3029": {
+   "trials": 20,
+   "successes": 12,
+   "runs": [
+    {
+     "seed": 3010,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3011,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3012,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.214,
+     "inferences": 18,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3013,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 55.856,
+     "inferences": 35,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3014,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3015,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3016,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 24.074,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3017,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 36.978,
+     "inferences": 24,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3018,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.48,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3019,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3020,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.832,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3021,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.654,
+     "inferences": 18,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3022,
+     "status": "failed",
+     "reason": "base-drift",
+     "error": null,
+     "elapsedS": 28.834,
+     "inferences": 19,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3023,
+     "status": "failed",
+     "reason": "base-drift",
+     "error": null,
+     "elapsedS": 73.776,
+     "inferences": 47,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3024,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.018,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3025,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.06,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3026,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.638,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3027,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 16.012,
+     "inferences": 11,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3028,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 22.196,
+     "inferences": 14,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3029,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    }
+   ]
+  }
+ },
+ "prefix-rtc-v3": {
+  "synchronous": {
+   "trials": 30,
+   "successes": 25,
+   "runs": [
+    {
+     "seed": 3000,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.478,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3001,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 24.552,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3002,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 18.726,
+     "inferences": 12,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3003,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.356,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3004,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3005,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.582,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3006,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.824,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3007,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 20.508,
+     "inferences": 13,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3008,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 30.05,
+     "inferences": 19,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3009,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.792,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3010,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.964,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3011,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 83.238,
+     "inferences": 53,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3012,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 29.74,
+     "inferences": 19,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3013,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.434,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3014,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.568,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3015,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.934,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3016,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 36.65,
+     "inferences": 23,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3017,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.3,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3018,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 21.92,
+     "inferences": 14,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3019,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.17,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3020,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3021,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.728,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3022,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3023,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.41,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3024,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.856,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3025,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 28.544,
+     "inferences": 18,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3026,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.532,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3027,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.32,
+     "inferences": 16,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3028,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3029,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    }
+   ]
+  },
+  "continuous400": {
+   "trials": 30,
+   "successes": 27,
+   "runs": [
+    {
+     "seed": 3000,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.666,
+     "inferences": 24,
+     "peakUnintendedForceN": 81.1,
+     "playbackRate": 0.4683
+    },
+    {
+     "seed": 3001,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.01,
+     "inferences": 26,
+     "peakUnintendedForceN": 40.6,
+     "playbackRate": 0.4687
+    },
+    {
+     "seed": 3002,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 110,
+     "peakUnintendedForceN": 68.8,
+     "playbackRate": 0.4681
+    },
+    {
+     "seed": 3003,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 28.336,
+     "inferences": 27,
+     "peakUnintendedForceN": 33.0,
+     "playbackRate": 0.4666
+    },
+    {
+     "seed": 3004,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.938,
+     "inferences": 26,
+     "peakUnintendedForceN": 43.8,
+     "playbackRate": 0.4626
+    },
+    {
+     "seed": 3005,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.3,
+     "inferences": 25,
+     "peakUnintendedForceN": 1341.8,
+     "playbackRate": 0.47
+    },
+    {
+     "seed": 3006,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 29.138,
+     "inferences": 28,
+     "peakUnintendedForceN": 66.6,
+     "playbackRate": 0.4643
+    },
+    {
+     "seed": 3007,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 110,
+     "peakUnintendedForceN": 109.6,
+     "playbackRate": 0.4661
+    },
+    {
+     "seed": 3008,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.998,
+     "inferences": 26,
+     "peakUnintendedForceN": 48.0,
+     "playbackRate": 0.4608
+    },
+    {
+     "seed": 3009,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.752,
+     "inferences": 24,
+     "peakUnintendedForceN": 43.3,
+     "playbackRate": 0.4678
+    },
+    {
+     "seed": 3010,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.744,
+     "inferences": 25,
+     "peakUnintendedForceN": 74.2,
+     "playbackRate": 0.4651
+    },
+    {
+     "seed": 3011,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 117.088,
+     "inferences": 107,
+     "peakUnintendedForceN": 113.7,
+     "playbackRate": 0.4643
+    },
+    {
+     "seed": 3012,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.666,
+     "inferences": 25,
+     "peakUnintendedForceN": 35.4,
+     "playbackRate": 0.4626
+    },
+    {
+     "seed": 3013,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.142,
+     "inferences": 26,
+     "peakUnintendedForceN": 59.8,
+     "playbackRate": 0.4657
+    },
+    {
+     "seed": 3014,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.2,
+     "inferences": 25,
+     "peakUnintendedForceN": 60.8,
+     "playbackRate": 0.4659
+    },
+    {
+     "seed": 3015,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.414,
+     "inferences": 24,
+     "peakUnintendedForceN": 51.9,
+     "playbackRate": 0.4664
+    },
+    {
+     "seed": 3016,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 29.766,
+     "inferences": 28,
+     "peakUnintendedForceN": 40.3,
+     "playbackRate": 0.4625
+    },
+    {
+     "seed": 3017,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.046,
+     "inferences": 25,
+     "peakUnintendedForceN": 56.2,
+     "playbackRate": 0.463
+    },
+    {
+     "seed": 3018,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.648,
+     "inferences": 25,
+     "peakUnintendedForceN": 32.9,
+     "playbackRate": 0.4682
+    },
+    {
+     "seed": 3019,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.624,
+     "inferences": 25,
+     "peakUnintendedForceN": 50.8,
+     "playbackRate": 0.4673
+    },
+    {
+     "seed": 3020,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.93,
+     "inferences": 26,
+     "peakUnintendedForceN": 31.9,
+     "playbackRate": 0.4604
+    },
+    {
+     "seed": 3021,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.524,
+     "inferences": 26,
+     "peakUnintendedForceN": 57.3,
+     "playbackRate": 0.4678
+    },
+    {
+     "seed": 3022,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 28.09,
+     "inferences": 27,
+     "peakUnintendedForceN": 34.6,
+     "playbackRate": 0.4674
+    },
+    {
+     "seed": 3023,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.16,
+     "inferences": 26,
+     "peakUnintendedForceN": 46.1,
+     "playbackRate": 0.4688
+    },
+    {
+     "seed": 3024,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.686,
+     "inferences": 26,
+     "peakUnintendedForceN": 63.8,
+     "playbackRate": 0.4674
+    },
+    {
+     "seed": 3025,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 24.976,
+     "inferences": 24,
+     "peakUnintendedForceN": 53.1,
+     "playbackRate": 0.4648
+    },
+    {
+     "seed": 3026,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.018,
+     "inferences": 25,
+     "peakUnintendedForceN": 38.9,
+     "playbackRate": 0.4676
+    },
+    {
+     "seed": 3027,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.642,
+     "inferences": 26,
+     "peakUnintendedForceN": 134.1,
+     "playbackRate": 0.4677
+    },
+    {
+     "seed": 3028,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 110,
+     "peakUnintendedForceN": 129.8,
+     "playbackRate": 0.4675
+    },
+    {
+     "seed": 3029,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 29.132,
+     "inferences": 28,
+     "peakUnintendedForceN": 34.5,
+     "playbackRate": 0.467
+    }
+   ],
+   "successAtMost100N": 24
+  }
+ },
+ "prefix-rtc-v3-e5": {
+  "synchronousGate": {
+   "trials": 10,
+   "successes": 8,
+   "runs": [
+    {
+     "seed": 3000,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3001,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.976,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3002,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 25.67,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3003,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 23.706,
+     "inferences": 15,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3004,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 30.26,
+     "inferences": 19,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3005,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 27.07,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3006,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 26.97,
+     "inferences": 17,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3007,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 30.254,
+     "inferences": 19,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3008,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 28.724,
+     "inferences": 18,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3009,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    }
+   ]
+  }
+ },
+ "prefix-rtc-v4": {
+  "synchronousGate": {
+   "trials": 5,
+   "successes": 2,
+   "runs": [
+    {
+     "seed": 3000,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3001,
+     "status": "failed",
+     "reason": "timeout",
+     "error": null,
+     "elapsedS": 120.002,
+     "inferences": 76,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3002,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 63.332,
+     "inferences": 40,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3003,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 73.624,
+     "inferences": 47,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3004,
+     "status": "failed",
+     "reason": "target-fell",
+     "error": null,
+     "elapsedS": 11.352,
+     "inferences": 8,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    }
+   ]
+  },
+  "stopped": "after 5 runs: 9/10 no longer reachable"
+ },
+ "prefix-rtc-v5": {
+  "synchronousGate": {
+   "trials": 6,
+   "successes": 4,
+   "runs": [
+    {
+     "seed": 3000,
+     "status": "failed",
+     "reason": "base-drift",
+     "error": null,
+     "elapsedS": 17.758,
+     "inferences": 12,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3001,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 33.014,
+     "inferences": 21,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3002,
+     "status": "failed",
+     "reason": "base-drift",
+     "error": null,
+     "elapsedS": 44.712,
+     "inferences": 28,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3003,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 32.732,
+     "inferences": 21,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3004,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 30.49,
+     "inferences": 20,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    },
+    {
+     "seed": 3005,
+     "status": "success",
+     "reason": null,
+     "error": null,
+     "elapsedS": 35.582,
+     "inferences": 23,
+     "peakUnintendedForceN": null,
+     "playbackRate": 1
+    }
+   ]
+  },
+  "stopped": "batch stopped after the 5th run (9/10 no longer reachable); the run already in flight (3005) finished as a success, so the gate record is 4/6. docs/evidence/mug-final-seeds.json (registered before the final) notes 3/5, written before that run ended."
+ },
+ "earlierOnTheSameProtocol": {
+  "prefix-rtc-v2": "synchronous 3000-3009 10/10, continuous400 3000-3029 23/30 (docs/evidence/continuous-followups-2026-10-26.json)"
+ },
+ "diagnostics": {
+  "v3 3002": "released mug toppled in the basket; hand held the push pose to the timeout",
+  "v3 3007, 3028": "regrasp loops between the 18 cm approach pose and the grasp pose",
+  "v4 3000, 3001": "oscillation between the approach and descent poses (round-1 approach handovers)",
+  "v5 3000, 3002": "mug lost at the start of the carry, regrasp collisions, base drift"
+ }
+}

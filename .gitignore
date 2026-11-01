@@ -1,0 +1,44 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Development evidence and workflow state; export intentionally outside source.
+.superpowers/
+work/
+:memory:.ses
+__pycache__/
+*.pyc
+
+# Verified recognition weights are packaged separately from source.
+/public/models/recognition-t7/model.onnx
+
+# Submission PDF and video drafts: kept next to their sources, not in Git (rebuilt often; the video goes to YouTube)
+/docs/submission/*.pdf
+/docs/submission/*.mp4
+/tools/eval/chrome-profile*
+
+# Model weights are downloaded or exported separately and verified by hash (see docs/static-hosting.md).
+/public/models/smolvla-*
+/public/models/language/
+/public/diagnostics/

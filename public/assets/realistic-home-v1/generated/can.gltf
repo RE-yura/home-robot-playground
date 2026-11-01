@@ -1,0 +1,307 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_clearcoat"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Can body"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.4000000059604645
+        }
+      },
+      "name": "Orange soda printed aluminium",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.18000000715255737,
+        "roughnessFactor": 0.3100000023841858
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Satin aluminium lid",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6499999761581421,
+          0.6600000262260437,
+          0.6700000166893005,
+          1
+        ],
+        "metallicFactor": 0.6499999761581421,
+        "roughnessFactor": 0.4399999976158142
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Graphite polymer",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.026000000536441803,
+          0.03200000151991844,
+          0.032999999821186066,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.41999998688697815
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Can body",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "can-print",
+      "uri": "../materials/printed/can-print.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 582,
+      "max": [
+        0.05000000074505806,
+        0.07500000298023224,
+        0.05000000074505806
+      ],
+      "min": [
+        -0.05000000074505806,
+        -0.07999999821186066,
+        -0.05000000074505806
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 582,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 582,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 3456,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 2620,
+      "max": [
+        0.05000000074505806,
+        0.07950000464916229,
+        0.05000000074505806
+      ],
+      "min": [
+        -0.05000000074505806,
+        -0.0794999971985817,
+        -0.05000000074505806
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 2620,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 2620,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 9972,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 178,
+      "max": [
+        0.006000000052154064,
+        0.0820000022649765,
+        0.014499999582767487
+      ],
+      "min": [
+        -0.006000000052154064,
+        0.07999999821186066,
+        -0.014499999582767487
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 178,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 178,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 900,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 6984,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6984,
+      "byteOffset": 6984,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4656,
+      "byteOffset": 13968,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 6912,
+      "byteOffset": 18624,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 31440,
+      "byteOffset": 25536,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 31440,
+      "byteOffset": 56976,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 20960,
+      "byteOffset": 88416,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 19944,
+      "byteOffset": 109376,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2136,
+      "byteOffset": 129320,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2136,
+      "byteOffset": 131456,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1424,
+      "byteOffset": 133592,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1800,
+      "byteOffset": 135016,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 136816,
+      "uri": "can.bin"
+    }
+  ]
+}

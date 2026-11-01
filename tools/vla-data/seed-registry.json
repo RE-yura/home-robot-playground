@@ -1,0 +1,12 @@
+{
+  "schema": "hsr-seed-registry-v1",
+  "cohort": "hsr-stationary-v4-demonstrations",
+  "partitionUnit": "entire-seed-all-instructions-and-attempts",
+  "calibrationSeeds": [7, 42],
+  "partitions": {
+    "train": [1000, 1999],
+    "validation": [2000, 2099],
+    "learned-rollout": [3000, 3099]
+  },
+  "normalization": {"partition": "train", "status": "accepted", "epsilon": 0.000001}
+}

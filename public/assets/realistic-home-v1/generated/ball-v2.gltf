@@ -1,0 +1,361 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v5.2.40",
+    "version": "2.0"
+  },
+  "extensionsUsed": [
+    "KHR_materials_sheen"
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "Two felt panels and recessed tennis seam"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_sheen": {
+          "sheenColorFactor": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "sheenRoughnessFactor": 0.5
+        }
+      },
+      "name": "Dense yellow-green felt",
+      "normalTexture": {
+        "index": 0,
+        "scale": 0.7
+      },
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Cream rubber seam",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.800000011920929,
+          0.7900000214576721,
+          0.6700000166893005,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.949999988079071
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Felt fiber tips",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.6100000143051147,
+          0.699999988079071,
+          0.06499999761581421,
+          1
+        ],
+        "metallicFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "\u7403.001",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2,
+            "COLOR_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 5,
+            "NORMAL": 6,
+            "TEXCOORD_0": 7,
+            "COLOR_0": 8
+          },
+          "indices": 9,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 10,
+            "NORMAL": 11,
+            "TEXCOORD_0": 12,
+            "COLOR_0": 13
+          },
+          "indices": 14,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "name": "tennis-felt-normal",
+      "uri": "../materials/printed/tennis-felt-normal.png"
+    },
+    {
+      "mimeType": "image/png",
+      "uri": "../materials/printed/tennis-felt.png"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 33151,
+      "max": [
+        0.03342693671584129,
+        0.03344999998807907,
+        0.03342694044113159
+      ],
+      "min": [
+        -0.03342694044113159,
+        -0.03344999998807907,
+        -0.03342693671584129
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 33151,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 33151,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 33151,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 195072,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 5125,
+      "max": [
+        0.03346545621752739,
+        0.02938152477145195,
+        0.03346545621752739
+      ],
+      "min": [
+        -0.03346545621752739,
+        -0.02938152477145195,
+        -0.03346545621752739
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 5125,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 5125,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 5125,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 24576,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 22828,
+      "max": [
+        0.033483244478702545,
+        0.033499132841825485,
+        0.0334637314081192
+      ],
+      "min": [
+        -0.03347456082701683,
+        -0.03349515423178673,
+        -0.03347106650471687
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5126,
+      "count": 22828,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 22828,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 22828,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5123,
+      "count": 34242,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 397812,
+      "byteOffset": 0,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 397812,
+      "byteOffset": 397812,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 265208,
+      "byteOffset": 795624,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 397812,
+      "byteOffset": 1060832,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 390144,
+      "byteOffset": 1458644,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 61500,
+      "byteOffset": 1848788,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 61500,
+      "byteOffset": 1910288,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 41000,
+      "byteOffset": 1971788,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 61500,
+      "byteOffset": 2012788,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 49152,
+      "byteOffset": 2074288,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 273936,
+      "byteOffset": 2123440,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 273936,
+      "byteOffset": 2397376,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 182624,
+      "byteOffset": 2671312,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 273936,
+      "byteOffset": 2853936,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 68484,
+      "byteOffset": 3127872,
+      "target": 34963
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3196356,
+      "uri": "ball-v2.bin"
+    }
+  ]
+}

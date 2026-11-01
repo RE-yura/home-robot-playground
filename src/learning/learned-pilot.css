@@ -1,0 +1,77 @@
+/* 自動実行: the same header, sidebar and four views as 手動操作 (index.css), with the plan and run status in the sidebar. */
+.auto-page button svg { width: 12px; height: 12px; flex-shrink: 0; }
+.language-plan form, .direct-run { display: grid; gap: 7px; }
+.direct-run { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px solid #d5d9cf; }
+.language-plan label, .direct-run label { font-size: 12px; font-weight: 600; }
+.language-plan textarea { resize: vertical; width: 100%; min-height: 64px; padding: 8px; border: 1px solid #bac7b8; border-radius: 4px; color: inherit; font: inherit; font-size: 13px; line-height: 1.6; background: #fafbf5; }
+.direct-run select { flex: 1; min-width: 0; padding: 8px; border: 1px solid #bac7b8; border-radius: 4px; color: inherit; font: inherit; font-size: 12px; background: #fafbf5; }
+.plan-buttons { display: flex; gap: 5px; }
+.plan-buttons button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 9px 10px; white-space: nowrap; }
+.plan-buttons button[type="submit"] { flex: 1; }
+.language-plan p { margin: 8px 0; color: #657568; font-size: 11px; line-height: 1.6; overflow-wrap: anywhere; }
+.language-plan progress, .learned-load-progress progress { display: block; width: 100%; height: 5px; accent-color: #33694e; }
+.language-download small, .learned-load-progress span { font-size: 10px; color: #657568; font-variant-numeric: tabular-nums; }
+.plan-task-title { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.plan-time { display: grid; grid-template-columns: 1fr auto auto; gap: 14px; align-items: baseline; padding: 8px 0; border-top: 1px solid #d5d9cf; color: #43584c; }
+.plan-time div { display: flex; gap: 5px; align-items: baseline; }
+.plan-time > div:first-child dt { color: #43584c; font-weight: 600; }
+.plan-time dd { font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.plan-steps time { font-variant-numeric: tabular-nums; }
+.language-download { display: grid; gap: 4px; margin: 6px 0; }
+.plan-tasks { padding-left: 18px; margin: 0 0 10px; }
+.plan-tasks > li { padding: 8px 0; border-top: 1px solid #e1e5dc; }
+.plan-task-title strong { font-size: 12px; }
+.plan-task-title > span { font-size: 10px; color: #657568; }
+.plan-steps { list-style: none; padding: 0; margin: 6px 0 0; }
+.plan-steps li { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; font-size: 11px; color: #6e7d70; }
+.plan-steps li[aria-current="step"] span { color: #235941; font-weight: 600; }
+.plan-steps li[data-complete="true"] span { color: #3e7759; }
+.plan-tasks small { font-size: 10px; color: #657568; }
+.plan-execute { width: 100%; }
+.language-plan .plan-note { font-size: 10px; }
+
+.learned-status-rail { margin-top: 12px; padding-top: 12px; border-top: 1px solid #d5d9cf; }
+.learned-status-main { display: flex; gap: 9px; align-items: flex-start; min-width: 0; }
+.learned-status-main > div { flex: 1; min-width: 0; }
+.learned-status-main output { display: block; font-size: 13px; font-weight: 600; line-height: 1.5; }
+.learned-status-main p { margin: 2px 0 0; font-size: 11px; color: #657568; line-height: 1.5; overflow-wrap: anywhere; }
+.learned-state-dot { margin-top: 5px; width: 10px; height: 10px; flex-shrink: 0; border-radius: 50%; background: #5a9b58; }
+.learned-status-rail[data-loading="true"] .learned-state-dot { background: transparent; border: 2px solid #cbd6d1; border-top-color: #33694e; animation: learned-spin .9s linear infinite; }
+.learned-status-rail[data-outcome="failed"] .learned-state-dot { background: #bd663e; }
+.learned-status-rail[data-outcome="stopped"] .learned-state-dot { background: #899695; }
+.learned-load-progress { display: grid; gap: 4px; margin-top: 7px; }
+.learned-run-metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(64px, 1fr)); gap: 8px; margin-top: 10px; }
+.learned-run-metrics dt { font-size: 10px; }
+.learned-run-metrics dd { margin-top: 2px; font-size: 13px; font-variant-numeric: tabular-nums; }
+.auto-page .learned-link { padding: 0; margin-top: 6px; color: #355541; background: transparent; border: 0; font-size: 11px; text-decoration: underline; text-underline-offset: 3px; }
+@keyframes learned-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .learned-status-rail[data-loading="true"] .learned-state-dot { animation: none; } }
+
+.auto-utilities { display: grid; gap: 8px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #d5d9cf; }
+.auto-utilities > button { padding: 8px; }
+.learned-settings summary { display: flex; align-items: center; gap: 6px; padding: 3px 0; cursor: pointer; font-size: 12px; font-weight: 600; list-style: none; }
+.learned-settings summary::-webkit-details-marker { display: none; }
+.learned-settings summary svg { width: 12px; height: 12px; }
+.learned-settings[open] summary svg { transform: rotate(180deg); }
+.learned-settings-body { margin-top: 8px; font-size: 12px; }
+.learned-settings-body label { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.learned-settings-body input[type="number"] { width: 94px; padding: 6px; border: 1px solid #bac7b8; border-radius: 4px; font: inherit; background: #fafbf5; }
+.learned-settings-body .learned-check { justify-content: flex-start; gap: 8px; cursor: pointer; }
+.learned-settings-body p { margin: 8px 0; font-size: 11px; line-height: 1.6; color: #657568; }
+.learned-settings-body small { font-size: 10px; color: #657568; }
+.learned-settings-body hr { margin: 10px 0; border: 0; border-top: 1px solid #d5d9cf; }
+.settings-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; }
+.settings-buttons button { padding: 7px 4px; font-size: 11px; }
+
+@media (max-width: 960px) {
+  /* Phones show all four views in a 2×2 grid above the instruction panel. */
+  .auto-page .workbench { flex-direction: column; overflow-y: auto; }
+  .auto-page .viewport { order: -1; flex: 0 0 min(100vw, 52dvh); }
+  .auto-page .workbench > aside { display: block; flex: 1 0 auto; overflow: visible; border-right: 0; border-top: 1px solid #d5d9cf; }
+  .auto-page .view-grid { display: grid; }
+  .auto-page .view-grid .camera-panel { display: flex; }
+}
+@media (max-width: 960px) and (orientation: landscape) { main.auto-page { display: flex; } }
+/* Unlearned steps: the planner's own stages, listed without measurement. */
+.plan-steps-unverified li small { font-size: 10px; color: #9aa59c; }
+.plan-unlearned { margin: 4px 0 0; font-size: 11px; color: #6e7d70; }

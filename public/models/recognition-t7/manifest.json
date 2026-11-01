@@ -1,0 +1,35 @@
+{
+  "classes": [
+    "mug",
+    "ball",
+    "basket"
+  ],
+  "graph": {
+    "bytes": 20169232,
+    "path": "/models/recognition-t7/model.onnx",
+    "sha256": "11283b2493d4cd14e160de8cccb42908865d17acdced96ccf4cde1ef89881617"
+  },
+  "input": {
+    "dtype": "float32",
+    "name": "images",
+    "shape": [
+      1,
+      3,
+      416,
+      416
+    ]
+  },
+  "output": {
+    "dtype": "float32",
+    "name": "output",
+    "shape": [
+      1,
+      3549,
+      8
+    ]
+  },
+  "pipeline": "fixed-five-view-650",
+  "schema": "recognition-t7-preview-v1",
+  "trainingUpdates": 28800,
+  "variant": "T7"
+}

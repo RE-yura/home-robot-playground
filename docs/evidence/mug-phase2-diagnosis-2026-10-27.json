@@ -1,0 +1,182 @@
+{
+ "schema": "hsr-evidence-v1",
+ "date": "2026-10-27",
+ "topic": "Phase 2 diagnosis of prefix-rtc-v3 failures and executor-option comparisons (plan docs/superpowers/plans/2026-10-27-mug-continuous-phase2.md)",
+ "failureStages": {
+  "note": "classified from recorded measured states (lift/gripper) per chunk; tools in .superpowers/tools/diag (git-ignored)",
+  "finalSynchronous": "9/9 failures placement: released, mug lies on its side against a side wall, mug bounds exceed the fit box by ~8 mm (CPU replay of seed 3034: zmin -0.168 vs -0.16), timeout",
+  "continuous150": "learned-only dev30+final60 and assisted60: grasp/hold ~12 (slip at lift, drop during carry), underflow ~9, placement ~8"
+ },
+ "repeatSynchronous": {
+  "seeds": {
+   "3004": [
+    "failed",
+    "failed",
+    "success",
+    "success"
+   ],
+   "3020": [
+    "failed",
+    "failed",
+    "success",
+    "success"
+   ],
+   "3022": [
+    "failed",
+    "success",
+    "failed",
+    "success"
+   ],
+   "3028": [
+    "failed",
+    "success",
+    "success",
+    "success"
+   ],
+   "3029": [
+    "failed",
+    "success",
+    "failed",
+    "success"
+   ]
+  },
+  "note": "seeds that failed once in the original synchronous dev run succeed 10/15 on repeats: failures are run-to-run, not layout-determined"
+ },
+ "teacherCpu": {
+  "seeds": "1000-1099, gentle-mug teacher variants (spike in .superpowers/tools/diag/teacher-v2.ts)",
+  "results": {
+   "push-base": {
+    "success": 94,
+    "failed": 3,
+    "running": 3
+   },
+   "pitch03": {
+    "running": 23,
+    "success": 77
+   },
+   "pitch04": {
+    "success": 90,
+    "running": 10
+   },
+   "smooth-w01": {
+    "running": 24,
+    "success": 68,
+    "failed": 8
+   },
+   "anchor-ready": {
+    "running": 49,
+    "success": 41,
+    "failed": 10
+   },
+   "anchor-only": {
+    "success": 52,
+    "running": 42,
+    "failed": 6
+   }
+  },
+  "conclusion": "baseline 94/100; every trajectory change (phase anchoring, ready attitude, roll-continuous carry, carry pitch) lowered success to 41-90/100; teacher kept unchanged"
+ },
+ "executorOptions": {
+  "v3 default c400 (reference)": {
+   "successes": 27,
+   "runs": 30,
+   "failures": [
+    {
+     "seed": 3002,
+     "reason": "timeout"
+    },
+    {
+     "seed": 3007,
+     "reason": "timeout"
+    },
+    {
+     "seed": 3028,
+     "reason": "timeout"
+    }
+   ],
+   "medianPlayback": 0.46701692936368944
+  },
+  "A rtcExec=6 (stopped early)": {
+   "successes": 2,
+   "runs": 6,
+   "failures": [
+    {
+     "seed": 3000,
+     "reason": "base-drift"
+    },
+    {
+     "seed": 3001,
+     "reason": "timeout"
+    },
+    {
+     "seed": 3002,
+     "reason": "base-drift"
+    },
+    {
+     "seed": 3003,
+     "reason": "base-drift"
+    }
+   ],
+   "medianPlayback": 0.46441425741486125
+  },
+  "B members=1 noise=zero (stopped early)": {
+   "successes": 9,
+   "runs": 18,
+   "failures": [
+    {
+     "seed": 3006,
+     "reason": "RTC queue underflow"
+    },
+    {
+     "seed": 3009,
+     "reason": "target-fell"
+    },
+    {
+     "seed": 3010,
+     "reason": "base-drift"
+    },
+    {
+     "seed": 3014,
+     "reason": "RTC queue underflow"
+    },
+    {
+     "seed": 3015,
+     "reason": "base-drift"
+    },
+    {
+     "seed": 3016,
+     "reason": "timeout"
+    },
+    {
+     "seed": 3017,
+     "reason": "RTC queue underflow"
+    },
+    {
+     "seed": 3018,
+     "reason": "timeout"
+    },
+    {
+     "seed": 3020,
+     "reason": "RTC queue underflow"
+    }
+   ],
+   "medianPlayback": 0.8410428933561988
+  },
+  "zero-noise synchronous 3000-3009": {
+   "successes": 8,
+   "runs": 10,
+   "failures": [
+    {
+     "seed": 3007,
+     "reason": "timeout"
+    },
+    {
+     "seed": 3009,
+     "reason": "timeout"
+    }
+   ],
+   "medianPlayback": 1
+  }
+ },
+ "adopted": "none of A/B; default executor unchanged"
+}

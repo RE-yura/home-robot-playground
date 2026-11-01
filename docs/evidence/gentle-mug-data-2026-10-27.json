@@ -1,0 +1,81 @@
+{
+ "schema": "hsr-evidence-v1",
+ "date": "2026-10-27",
+ "topic": "Stage 2: gentle-mug demonstrations recollected (plan docs/superpowers/plans/2026-10-26-mug-continuous-100.md, Task 4)",
+ "collection": {
+  "sourceCommit": "2ee0ad4bb008abaeaf7406d53951096d117c5ae0",
+  "teacherVersion": "hsr-mug-gentle-v1",
+  "scenes": [
+   "hsr-stationary-v5",
+   "hsr-stationary-v6-recovery"
+  ],
+  "seeds": {
+   "train normal": "1200-1459",
+   "train recovery": "1460-1599",
+   "validation normal": "2020-2039"
+  },
+  "collector": "tools/cloud/collect-demos.mjs, headless Chromium (swiftshader), 6 workers, 2026-10-26 22:31 - 2026-10-27 01:19 JST",
+  "attempts": 420,
+  "packets": 419,
+  "packetless": [
+   {
+    "seed": 1562,
+    "runnerFailure": "Error: page.evaluate: RecoveryPreparationError: Recovery preparation exceeded physical quality limits\n    at prepareReco"
+   }
+  ]
+ },
+ "certification": {
+  "tool": "tools/vla-data/build_mug_fork.py certify (certification.quality_rejections + receipts/source hashes)",
+  "certifiedJsonSha256": "83aef8d28680a7ee70848e3639c8d37493b013ff6a1349a39f068ef9244c7980",
+  "accepted": 339,
+  "byPartitionScene": {
+   "train hsr-stationary-v5": {
+    "accepted": 220,
+    "rejected": 40
+   },
+   "train hsr-stationary-v6-recovery": {
+    "accepted": 102,
+    "rejected": 37
+   },
+   "validation hsr-stationary-v5": {
+    "accepted": 17,
+    "rejected": 3
+   }
+  },
+  "rejectionReasons": {
+   "physical-transport-not-successful": 44,
+   "continuous-two-second-settlement-missing": 44,
+   "target-contact-numeric-outlier": 38,
+   "robot-environment-contact-continues-during-settlement": 16,
+   "unintended-contact-limit-exceeded": 10,
+   "unresolved-or-premature-drop": 2,
+   "insufficient-fresh-transport-images": 1
+  },
+  "baseMarginRejections": 0,
+  "baseMarginNote": "no accepted episode left 6 mm / 12 mrad of its start (apply_base_margin at build)"
+ },
+ "comparison": "parent dataset had 80 legacy mug train episodes and 10 validation (removed in the fork); its 50 ball train and 10 ball validation episodes are kept",
+ "rawData": "work/mug-gentle-2026-10-26/raw (local, not in Git) and the training host's hsr-mug-gentle-20261026-01/raw",
+ "fork": {
+  "tool": "tools/vla-data/build_mug_fork.py build (host, source cbdc513), 01:47-02:45 JST",
+  "datasetSha256": "729e787b2e5dbe8b6bc8ffc57f544e27a3addb68cebf3f1f5c5f8484070e84cd",
+  "parentDatasetSha256": "e2e3d221a960f5393de61043418c347afed2d51abfb123ca429b548452991e49",
+  "normalizationSha256": "12a46a6e052b0ef1dd692869f4bce333f669f5d33248449c3e80c4593502943d",
+  "train": {
+   "deletedParentMugEpisodes": 80,
+   "keptParentEpisodes": 50,
+   "addedEpisodes": 322,
+   "episodes": 372,
+   "frames": 95138
+  },
+  "validation": {
+   "deletedParentMugEpisodes": 10,
+   "keptParentEpisodes": 10,
+   "addedEpisodes": 17,
+   "episodes": 27,
+   "frames": 7353
+  },
+  "roundTrip": "original JPEG/state/action/task/episode/frame bytes and native episode boundaries verified for both partitions",
+  "preflight": "parent f289, fork parent e2e3d221, normalization 12a46a6e (= parent), 322/17 mug seeds, LeRobot ca69a206, CUDA, idle GPU: all pass"
+ }
+}

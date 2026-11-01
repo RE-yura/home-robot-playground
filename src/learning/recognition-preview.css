@@ -1,0 +1,34 @@
+.recognition-console { min-height: 100dvh; height: 100dvh; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; color: #263b34; background: #fafcfc; }
+.recognition-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding: 18px 24px; border-bottom: 1px solid #dce2e3; }
+.recognition-toolbar strong { font-size: 17px; letter-spacing: .035em; }
+.recognition-badge { margin-left: 16px; border: 1px solid #c8d6cd; border-radius: 20px; padding: 4px 10px; color: #4b6d56; font-size: 12px; }
+.recognition-toolbar p { color: #748184; font-size: 12px; margin: 8px 0 0; }
+.recognition-toolbar nav { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
+.recognition-toolbar button { padding: 10px 16px; font-size: 13px; }
+.recognition-toolbar a { font-size: 12px; color: #355d55; text-underline-offset: 3px; }
+.recognition-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 0; }
+.recognition-live { min-height: 320px; position: relative; }
+.recognition-cameras { position: absolute; inset: 0; display: grid; grid-template-rows: 1fr 1fr; pointer-events: none; }
+.recognition-cameras > div { position: relative; min-height: 0; }
+.recognition-cameras > div + div { border-top: 2px solid #fafcfc; }
+.recognition-cameras .panel-label { top: 12px; left: 12px; color: #fff; background: #182c35b3; border: 0; padding: 6px 9px; border-radius: 3px; font-size: 12px; }
+.recognition-snapshot { border-left: 1px solid #dce2e3; padding: 22px; overflow: auto; }
+.recognition-snapshot h1 { font-size: 17px; font-weight: 600; margin: 0 0 20px; }
+.recognition-snapshot svg { display: block; width: 100%; aspect-ratio: 4 / 3; background: #e8edec; border-radius: 5px; }
+.recognition-placeholder { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; padding: 28px; background: #edf1ee; color: #748184; font-size: 14px; text-align: center; border-radius: 5px; line-height: 1.7; }
+.recognition-snapshot p { font-size: 13px; }
+.recognition-timing { display: flex; flex-wrap: wrap; gap: 18px; margin: 20px 0 0; }
+.recognition-timing dt { font-size: 11px; color: #748184; margin-bottom: 5px; }
+.recognition-timing dd { font-size: 14px; font-variant-numeric: tabular-nums; margin: 0; }
+.recognition-status { padding: 18px 24px; border-top: 1px solid #dce2e3; }
+.recognition-status output { font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }
+.recognition-status p { color: #748184; font-size: 12px; line-height: 1.7; margin: 6px 0 0; }
+.recognition-console :focus-visible { outline: 2px solid #33694e; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .recognition-console { height: auto; grid-template-rows: auto auto auto; }
+  .recognition-toolbar { padding: 16px; }
+  .recognition-layout { grid-template-columns: 1fr; }
+  .recognition-live { height: 500px; }
+  .recognition-snapshot { border-left: 0; border-top: 1px solid #dce2e3; padding: 18px; }
+  .recognition-status { padding: 16px; }
+}
